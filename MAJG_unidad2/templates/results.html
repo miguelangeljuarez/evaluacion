@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+<p>the values in the equation:</p>
+<table>
+    <tr><td>Compras:</td>
+        <td>{{ the_comps }}
+    </tr>
+    <tr><td>Gastos:</td>
+        <td>{{ the_spends }}
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">Compras totales = compras + gastos de compra</td>
+    </tr>
+    <tr>
+        <td>Total:</td>
+        <td>{{ the_result }}
+        </td>
+    </tr>
+    <tr><a href="/entry">Go back</a></tr>
+</table>
+
+
+
+
+{% endblock %}
